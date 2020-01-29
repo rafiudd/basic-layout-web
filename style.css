@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+    background-color: #29291e;
+    color: white;
+}
+td {
+    width: 220px;
+}
+table {
+    margin: 0 auto;
+}
+img {
+    width: 200px !important;
+    border-radius: 4px;
+}

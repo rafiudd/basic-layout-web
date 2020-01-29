@@ -1,6 +1,7 @@
 # SCC Task 1
 
 Create basic layout website
+Github Pages : https://rafiudd.github.io/basic-layout-web/
 
 ![Basic Layout](image/layout.png)
 

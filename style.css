@@ -1,0 +1,95 @@
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+* {
+    margin: 0;
+}
+.row {
+    flex-direction: row;
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.col-1 {
+    flex-direction: column;
+    flex: 8.33%;
+}
+.col-2 {
+    flex-direction: column;
+    flex: 16.66%;
+}
+.col-3 {
+    flex-direction: column;
+    flex: 25%;
+}
+.col-4 {
+    flex-direction: column;
+    flex: 33.33%;
+}
+.col-5 {
+    flex-direction: column;
+    flex: 41.66%;
+}
+.col-6 {
+    flex-direction: column;
+    flex: 50%;
+    max-width: 50%;
+}
+.col-7 {
+    flex-direction: column;
+    flex: 58.33%;
+}
+.col-8 {
+    flex-direction: column;
+    flex: 66.66%;
+}
+
+@media all and (max-width: 360px) {
+    .container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    /* .col-xs-12 {
+       flex: 100% !important;
+       width: 100% !important;
+    } */
+}
+
+.top-1 {
+    margin-top: 10px;
+}
+.right-1 {
+    margin-right: 10px;
+}
+
+/* Style Box */
+.colored {
+    background-color: #C4C4C4;
+}
+.width-1 {
+    width: 100%;
+    height: 100px;
+}
+.width-2 {
+    /* padding: 60px 60px 60px 60px; */
+    width: 100%;
+    height: 200px;
+}
+.width-3 {
+    width: 100%;
+    height: 230px;
+}
+.width-4 {
+    width: 100%;
+}
+.centered {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    vertical-align: bottom;
+}
+/* End Style Box */

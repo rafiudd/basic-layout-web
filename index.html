@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <h1>Hello Ges</h1>
-   <p>Task 1 SCC 2020</p>
-   <br><br><br><br>
-   <table>
-        <tr>
-          <td>Photo</td>
-          <td>Username</td>
-          <td>Link Project</td>
-        </tr>
-        <tr>
-          <td id="imaget" class="image"></td>
-          <td id="username"></td>
-          <td id="gh-pages"></td>
-        </tr>
-    </table>
-   <script>
-        async function get() {
-          const res = await fetch(
-            'https://api.github.com/repos/rafiudd/basic-layout-web/contributors',
-          );
-          const data = await res.json();
-          console.log(data);
-
-          let ghPages = document.getElementById('gh-pages');
-          let username = document.getElementById('username');
-          let img = document.getElementById('imaget');
-          let divNames = document.querySelector('.names');
-          let linkRepo = document.querySelector('.link_repositories');
-          let myghPages = 'https://rafiudd.github.io/basic-layout-web/'
-
-          for (let i = 0; i < data.length; i++) {
-            let listName = '';
-            let listImg = '';
-            let pages = '';
-
-            let listData = data[i];
-            let {login: user, avatar_url: imgUser} = listData;
-  
-            listName += `<h3>${user}</h3>`;
-            listImg += `<a href="https://github.com/${user}" ><img src="${imgUser}"></a>`;
-            pages += `<a href="${myghPages  + user}" >${user}</a>`
-
-            img.innerHTML += listImg;
-            username.innerHTML += listName
-            ghPages.innerHTML += pages
-          }
-        }
-        window.onload = get();
-      </script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="box header">
+          1
+        </div>
+        <div class="box body_1">
+          2
+        </div>
+        <div class="box body_2">
+          3
+        </div>
+        <div class="box body_3">
+          4
+        </div>
+        <div class="box content_1">
+          5
+        </div>
+        <div class="box content_2">
+          6
+        </div>
+        <div class="box content_3">
+          7
+        </div>
+        <div class="box footer_1">
+          8
+        </div>
+        <div class="box footer_2">
+          9
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
